@@ -1,0 +1,122 @@
+/* Base Styles*/
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f6f8fa;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 500px;
+    background-color: #ffffff;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Form and Input */
+  form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  
+  input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  input[type="text"].error-border {
+    border-color: red;
+  }
+  
+  button {
+    padding: 10px 16px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  button:hover {
+    background-color: #048626;
+  }
+  
+  /*  Error Message */
+  #errorMsg {
+    color: red;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  
+  /* Task List */
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  li:last-child {
+    border-bottom: none;
+  }
+  
+  li span {
+    flex: 1;
+    margin-left: 10px;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  li span.completed {
+    text-decoration: line-through;
+    color: #888;
+  }
+  
+  /* Delete Button*/
+  .delete-btn {
+    background-color: #f205bf;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    margin-left: 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .delete-btn:hover {
+    background-color: #d31b07;
+  }
+  
+  /* Clear Completed Button */
+  #clearCompletedBtn {
+    margin-top: 15px;
+    width: 100%;
+    background-color: #f61165;
+  }
+  
+  #clearCompletedBtn:hover {
+    background-color: #d33408;
+  }
